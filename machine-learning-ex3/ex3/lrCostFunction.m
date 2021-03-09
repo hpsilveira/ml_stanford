@@ -52,7 +52,7 @@ J = J + (lambda * reg) / (2 * m);
 
 % Gradient
 grad = (X' * (sigmoid(X * theta) - y)) / m;
-grad = grad + ((lambda / m) .* grad_reg);
+grad = grad + ((lambda / m) * grad_reg);
 
 % =============================================================
 
